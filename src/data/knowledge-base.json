@@ -1,0 +1,275 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-05-29",
+  "company": {
+    "name": "Shree Raj Steels",
+    "brand": "SRS",
+    "established": "2019-08-01",
+    "experience": "40+ Years",
+    "headOffice": "Office No. 6, Plot No. 8, Omkar CHS, Sector 2, Khanda Colony, New Panvel - 410206, Navi Mumbai, India",
+    "factory": "Plot No. 12/A, MIDC, Taloja Industrial Area, District Raigad, Maharashtra, India",
+    "website": "https://www.shreerajsteels.com",
+    "email": "srsteelbby@gmail.com",
+    "phones": ["+91 7069672923", "+91 7400410762"],
+    "whatsapp": "+917069672923",
+    "businessType": ["Manufacturer", "Supplier", "Exporter"],
+    "certifications": [
+      { "name": "ISO 9001:2015", "number": "QMS-987654" },
+      { "name": "PED 2014/68/EU", "number": "PED-12345" },
+      { "name": "ISO 14001:2015", "number": "EMS-45678" }
+    ],
+    "keyClients": ["BHEL", "ONGC", "Techniche", "Toyo Engineering", "Reliance"],
+    "inspectionBodies": ["TUV", "SGS", "Bureau Veritas", "Lloyds Register", "DNV"]
+  },
+  "categories": [
+    {
+      "id": "cat_pipes_tubes",
+      "name": "Pipes & Tubes",
+      "slug": "pipes-tubes",
+      "description": "Premium quality seamless, welded, and ERW pipes and tubes for industrial applications.",
+      "parentId": null,
+      "children": ["prod_seamless_pipes", "prod_erw_pipes", "prod_saw_pipes", "prod_boiler_tubes"],
+      "icon": "package"
+    },
+    {
+      "id": "cat_elbows_bends",
+      "name": "Elbows & Bends",
+      "slug": "elbows-bends",
+      "description": "Directional change fittings including 45°, 90°, and 180° elbows and custom bends.",
+      "parentId": null,
+      "children": ["prod_lr_elbows", "prod_sr_elbows", "prod_45_elbows", "prod_180_returns", "prod_miter_bends"],
+      "icon": "corner-up-right"
+    },
+    {
+      "id": "cat_tees",
+      "name": "Tees",
+      "slug": "tees",
+      "description": "Equal and unequal tees for flow division in pipeline systems.",
+      "parentId": null,
+      "children": ["prod_equal_tees", "prod_reducing_tees", "prod_lateral_tees", "prod_cross_tees"],
+      "icon": "git-branch"
+    },
+    {
+      "id": "cat_reducers",
+      "name": "Reducers",
+      "slug": "reducers",
+      "description": "Concentric and eccentric reducers for changing pipe sizes.",
+      "parentId": null,
+      "children": ["prod_concentric_reducers", "prod_eccentric_reducers"],
+      "icon": "minimize-2"
+    },
+    {
+      "id": "cat_flanges",
+      "name": "Flanges",
+      "slug": "flanges",
+      "description": "High-pressure flanges in all classes and face finishes.",
+      "parentId": null,
+      "children": ["prod_wn_flanges", "prod_so_flanges", "prod_blind_flanges", "prod_plate_flanges"],
+      "icon": "disc"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_seamless_pipes",
+      "name": "Seamless Pipes",
+      "slug": "seamless-pipes",
+      "categoryId": "cat_pipes_tubes",
+      "seoTitle": "Seamless Steel Pipes Manufacturer | SRS",
+      "seoDescription": "High-pressure seamless pipes manufactured to ASTM, API, and DIN standards.",
+      "description": "Extruded from solid billets without weld seams, designed for high-pressure and critical applications.",
+      "applications": ["Oil & Gas Upstream", "Power Plant Boilers", "High-Pressure Hydraulic Systems"],
+      "sizeRange": { "min": 0.5, "max": 24, "unit": "inches" },
+      "standards": ["ASTM A106", "ASTM A53", "API 5L", "ASTM A335"],
+      "availableMaterials": ["mat_carbon_steel", "mat_alloy_steel", "mat_stainless_steel", "mat_duplex"],
+      "features": ["No weld seam", "High pressure rating", "Uniform structure"],
+      "surfaceFinish": ["Bare", "Black Painted", "Galvanized", "3LPE"],
+      "manufacturingMethod": "Hot Extrusion / Cold Drawing",
+      "temperatureRange": { "min": -196, "max": 600 },
+      "aiKeywords": ["seamless pipe", "high pressure pipe", "SMLS", "API 5L seamless", "A106 pipe"],
+      "synonyms": ["SMLS pipes", "Extruded pipes", "Non-welded pipes"],
+      "faq": [
+        { "question": "What is the max size for seamless pipes?", "answer": "We manufacture and supply seamless pipes up to 24 inches in outer diameter." },
+        { "question": "Why use seamless over ERW?", "answer": "Seamless pipes have no weld seam, making them structurally uniform and capable of withstanding about 20% higher pressure than welded pipes of the same material and size." }
+      ],
+      "relatedProducts": ["prod_lr_elbows", "prod_wn_flanges"],
+      "rfqFields": ["Size (OD/DN)", "Schedule/Thickness", "Material Grade", "Standard", "Length", "Quantity"]
+    },
+    {
+      "id": "prod_erw_pipes",
+      "name": "ERW Pipes",
+      "slug": "erw-pipes",
+      "categoryId": "cat_pipes_tubes",
+      "seoTitle": "ERW Steel Pipes & Tubes | SRS",
+      "seoDescription": "Electric Resistance Welded pipes for water, gas, and structural applications.",
+      "description": "Electric Resistance Welded pipes manufactured from steel coils, offering excellent dimensional accuracy and cost-efficiency.",
+      "applications": ["Water Distribution", "Structural Support", "HVAC Systems", "Low Pressure Gas"],
+      "sizeRange": { "min": 0.5, "max": 24, "unit": "inches" },
+      "standards": ["ASTM A53", "API 5L", "IS 1239", "IS 3589"],
+      "availableMaterials": ["mat_carbon_steel"],
+      "features": ["Cost-effective", "Tight dimensional tolerances", "Readily available"],
+      "surfaceFinish": ["Bare", "Galvanized", "Epoxy Coated"],
+      "manufacturingMethod": "Electric Resistance Welding",
+      "temperatureRange": { "min": -20, "max": 400 },
+      "aiKeywords": ["ERW pipe", "welded pipe", "structural tube", "galvanized pipe"],
+      "synonyms": ["Welded pipes", "HFI pipes", "Electric welded pipes"],
+      "faq": [
+        { "question": "What is ERW?", "answer": "ERW stands for Electric Resistance Welded. The pipe is formed by rolling strip steel into a cylinder and welding the edges using a high-frequency electrical current." }
+      ],
+      "relatedProducts": ["prod_so_flanges", "prod_equal_tees"],
+      "rfqFields": ["Size", "Thickness", "Grade", "Standard", "Surface Finish"]
+    },
+    {
+      "id": "prod_lr_elbows",
+      "name": "Long Radius (LR) Elbows",
+      "slug": "long-radius-elbows",
+      "categoryId": "cat_elbows_bends",
+      "seoTitle": "Long Radius 90 Degree Elbows | SRS",
+      "seoDescription": "Premium long radius elbows (R=1.5D) in carbon, alloy, and stainless steel.",
+      "description": "Pipe fittings used to change the direction of flow by 90 or 45 degrees, where the centerline radius is 1.5 times the nominal pipe size.",
+      "applications": ["Refineries", "Petrochemical Plants", "Water Pipelines"],
+      "sizeRange": { "min": 0.5, "max": 60, "unit": "inches" },
+      "standards": ["ASME B16.9", "EN 10253", "DIN 2605"],
+      "availableMaterials": ["mat_carbon_steel", "mat_alloy_steel", "mat_stainless_steel", "mat_nickel_alloy"],
+      "features": ["Low friction loss", "Smooth flow transition", "Standard dimensioning"],
+      "surfaceFinish": ["Black Rust-proof Oil", "Sandblasted", "Pickled (for SS)"],
+      "manufacturingMethod": "Hot Forming / Mandrel Forming",
+      "temperatureRange": { "min": -196, "max": 800 },
+      "aiKeywords": ["LR elbow", "90 degree elbow", "long radius bend", "A234 WPB elbow"],
+      "synonyms": ["90° LR Elbow", "1.5D Elbow"],
+      "faq": [
+        { "question": "What does LR mean?", "answer": "LR stands for Long Radius. It means the radius of curvature is 1.5 times the nominal pipe diameter (1.5D)." }
+      ],
+      "relatedProducts": ["prod_seamless_pipes", "prod_wn_flanges"],
+      "rfqFields": ["Angle (90/45)", "Size", "Schedule", "Material Grade", "Standard"]
+    },
+    {
+      "id": "prod_wn_flanges",
+      "name": "Weld Neck Flanges",
+      "slug": "weld-neck-flanges",
+      "categoryId": "cat_flanges",
+      "seoTitle": "Weld Neck Flanges ASME B16.5 | SRS",
+      "seoDescription": "High-pressure weld neck flanges manufactured to precision tolerances.",
+      "description": "Flanges designed to be butt-welded to the pipe, providing an excellent stress distribution through the tapered hub.",
+      "applications": ["High Pressure Piping", "Extreme Temperature Environments", "Hazardous Fluids"],
+      "sizeRange": { "min": 0.5, "max": 48, "unit": "inches" },
+      "standards": ["ASME B16.5", "ASME B16.47", "EN 1092-1", "DIN 2631-2637"],
+      "availableMaterials": ["mat_carbon_steel", "mat_stainless_steel", "mat_duplex"],
+      "features": ["Best for high stress", "Radiographic testing possible at weld", "Prevents turbulence"],
+      "surfaceFinish": ["Raised Face (RF)", "Ring Type Joint (RTJ)", "Flat Face (FF)"],
+      "manufacturingMethod": "Forged",
+      "pressureRating": "Class 150 to 2500",
+      "temperatureRange": { "min": -196, "max": 800 },
+      "aiKeywords": ["WNRF flange", "weld neck", "high pressure flange", "forged flange"],
+      "synonyms": ["WN Flange", "Tapered Hub Flange", "Butt Weld Flange"],
+      "faq": [
+        { "question": "Why choose Weld Neck over Slip-On?", "answer": "Weld neck flanges transfer stress from the flange to the pipe, making them ideal for high-pressure and high-temperature applications where fatigue strength is critical." }
+      ],
+      "relatedProducts": ["prod_seamless_pipes", "prod_lr_elbows"],
+      "rfqFields": ["Size", "Pressure Class", "Facing (RF/RTJ)", "Schedule/Bore", "Material Grade"]
+    }
+  ],
+  "materials": [
+    {
+      "id": "mat_carbon_steel",
+      "name": "Carbon Steel",
+      "type": "carbon_steel",
+      "grades": ["ASTM A234 WPB", "ASTM A105", "ASTM A106 Gr.B", "API 5L Gr.B to X70"],
+      "standards": ["ASTM", "ASME", "API"],
+      "properties": { "tensileStrength": "415-585 MPa", "yieldStrength": "240 MPa min", "elongation": "22% min", "hardness": "197 HB max" },
+      "temperatureRange": { "min": -29, "max": 427 },
+      "corrosionResistance": "Low; requires coating or painting in corrosive environments.",
+      "typicalApplications": ["Water pipelines", "Structural framing", "Low to medium pressure gas lines", "General manufacturing"],
+      "aiKeywords": ["CS", "carbon steel", "mild steel", "A234 WPB", "A105"]
+    },
+    {
+      "id": "mat_stainless_steel",
+      "name": "Stainless Steel (Austenitic)",
+      "type": "stainless_steel",
+      "grades": ["304/304L", "316/316L", "310S", "321", "347"],
+      "standards": ["ASTM A403", "ASTM A182", "ASTM A312"],
+      "properties": { "tensileStrength": "515 MPa min", "yieldStrength": "205 MPa min", "elongation": "30% min", "hardness": "90 HRB max" },
+      "temperatureRange": { "min": -196, "max": 800 },
+      "corrosionResistance": "High; excellent resistance to oxidation and many organic/inorganic chemicals. 316L adds resistance to chlorides.",
+      "typicalApplications": ["Chemical processing", "Food & Beverage", "Pharmaceuticals", "Cryogenics"],
+      "aiKeywords": ["SS", "stainless", "inox", "304L", "316L", "corrosion resistant"]
+    },
+    {
+      "id": "mat_alloy_steel",
+      "name": "Chrome-Moly Alloy Steel",
+      "type": "alloy_steel",
+      "grades": ["ASTM A234 WP11, WP22, WP91", "ASTM A335 P11, P22, P91", "ASTM A182 F11, F22, F91"],
+      "standards": ["ASTM", "ASME"],
+      "properties": { "tensileStrength": "415-585 MPa", "yieldStrength": "205-415 MPa", "elongation": "20% min", "hardness": "197-248 HB" },
+      "temperatureRange": { "min": -29, "max": 650 },
+      "corrosionResistance": "Moderate; better oxidation resistance than carbon steel at high temperatures due to Chromium content.",
+      "typicalApplications": ["Power generation boilers", "High-temperature steam lines", "Refinery cracking units"],
+      "aiKeywords": ["Alloy steel", "Cr-Mo", "P11", "P22", "P91", "boiler steel", "high temperature steel"]
+    },
+    {
+      "id": "mat_duplex",
+      "name": "Duplex & Super Duplex",
+      "type": "duplex",
+      "grades": ["UNS S32205 (2205)", "UNS S32750 (2507)", "UNS S32760"],
+      "standards": ["ASTM A815", "ASTM A182 F51/F53", "ASTM A790"],
+      "properties": { "tensileStrength": "620-800 MPa min", "yieldStrength": "450-550 MPa min", "elongation": "15-25% min", "hardness": "290-310 HB max" },
+      "temperatureRange": { "min": -50, "max": 250 },
+      "corrosionResistance": "Superior; exceptional resistance to chloride stress corrosion cracking, pitting, and crevice corrosion.",
+      "typicalApplications": ["Offshore platforms", "Desalination plants", "Chemical tankers", "Pulp and paper processing"],
+      "aiKeywords": ["Duplex", "Super Duplex", "2205", "2507", "SAF 2507", "high strength stainless"]
+    },
+    {
+      "id": "mat_nickel_alloy",
+      "name": "Nickel Alloys & Exotics",
+      "type": "nickel_alloy",
+      "grades": ["Inconel 600/625/825", "Hastelloy C276", "Monel 400"],
+      "standards": ["ASTM B366", "ASTM B564", "ASTM B163"],
+      "properties": { "tensileStrength": "550-690 MPa", "yieldStrength": "240-310 MPa", "elongation": "30-40%", "hardness": "200-240 HB" },
+      "temperatureRange": { "min": -200, "max": 1093 },
+      "corrosionResistance": "Extreme; resists severe corrosive environments including strong acids, alkalis, and seawater at elevated temperatures.",
+      "typicalApplications": ["Nuclear reactors", "Aerospace components", "Severe chemical processing", "Sour gas extraction"],
+      "aiKeywords": ["Inconel", "Hastelloy", "Monel", "nickel alloy", "exotic metal", "superalloy"]
+    }
+  ],
+  "industries": [
+    {
+      "id": "ind_oil_gas",
+      "name": "Oil & Gas (Upstream & Downstream)",
+      "description": "Exploration, extraction, refining, and transportation of petroleum and natural gas.",
+      "typicalProducts": ["prod_seamless_pipes", "prod_lr_elbows", "prod_wn_flanges"],
+      "typicalMaterials": ["mat_carbon_steel", "mat_duplex", "mat_nickel_alloy"],
+      "standards": ["API 5L", "ASME B31.3", "NACE MR0175"],
+      "requirements": "High pressure ratings, resistance to sour gas (H2S), strict traceability, and 100% NDT inspection.",
+      "aiKeywords": ["refinery", "pipeline", "offshore", "petrochemical", "API piping"]
+    },
+    {
+      "id": "ind_power",
+      "name": "Power Generation",
+      "description": "Thermal, nuclear, and renewable power plants.",
+      "typicalProducts": ["prod_seamless_pipes", "prod_wn_flanges", "prod_tees"],
+      "typicalMaterials": ["mat_alloy_steel", "mat_stainless_steel", "mat_carbon_steel"],
+      "standards": ["ASME Boiler and Pressure Vessel Code (BPVC)", "ASME B31.1"],
+      "requirements": "High-temperature creep resistance, high-pressure steam handling, and zero-defect welded joints.",
+      "aiKeywords": ["power plant", "boiler", "steam piping", "turbine", "thermal power"]
+    },
+    {
+      "id": "ind_chemical",
+      "name": "Chemical & Pharmaceutical",
+      "description": "Manufacturing of bulk chemicals, fine chemicals, and pharmaceuticals.",
+      "typicalProducts": ["prod_erw_pipes", "prod_lr_elbows", "prod_so_flanges"],
+      "typicalMaterials": ["mat_stainless_steel", "mat_nickel_alloy", "mat_duplex"],
+      "standards": ["ASME BPE", "ASME B31.3"],
+      "requirements": "Extreme corrosion resistance, sanitary surface finishes, and zero contamination risk.",
+      "aiKeywords": ["chemical processing", "pharma piping", "sanitary fittings", "acid plant"]
+    },
+    {
+      "id": "ind_water",
+      "name": "Water Treatment & Desalination",
+      "description": "Municipal water supply, wastewater treatment, and reverse osmosis desalination plants.",
+      "typicalProducts": ["prod_erw_pipes", "prod_saw_pipes", "prod_flanges"],
+      "typicalMaterials": ["mat_carbon_steel", "mat_duplex", "mat_stainless_steel"],
+      "standards": ["AWWA C200", "EN 10224"],
+      "requirements": "Large diameter transmission, resistance to chloride pitting (for desalination), internal coatings (e.g., epoxy).",
+      "aiKeywords": ["water supply", "desalination", "RO plant", "wastewater", "large diameter pipe"]
+    }
+  ]
+}

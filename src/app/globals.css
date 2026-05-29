@@ -1,0 +1,301 @@
+@import "tailwindcss";
+
+/* ============================================
+   SRS Design System — globals.css
+   Navy + Gold Luxury Industrial Theme
+   ============================================ */
+
+@theme inline {
+  /* Primary — Navy */
+  --color-navy-900: #0A1628;
+  --color-navy-800: #0D1B2A;
+  --color-navy-700: #1B2A4A;
+  --color-navy-600: #243B5F;
+  --color-navy-500: #2D4A73;
+
+  /* Gold Accent */
+  --color-gold-500: #C9A84C;
+  --color-gold-400: #D4B766;
+  --color-gold-300: #E8D5A3;
+  --color-gold-200: #F0E4C4;
+  --color-gold-100: #FAF5E8;
+
+  /* Functional */
+  --color-steel-blue: #3B82A0;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-info: #3B82F6;
+  --color-off-white: #F8F6F0;
+
+  /* Fonts */
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-montserrat);
+  --font-mono: var(--font-jetbrains);
+
+  /* Custom animations */
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 30s linear infinite;
+  --animate-fade-up: fade-up 0.6s ease-out forwards;
+  --animate-fade-in: fade-in 0.4s ease-out forwards;
+  --animate-pulse-ring: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+/* ============================================
+   Animation Keyframes
+   ============================================ */
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse-ring {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.8; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes count-up {
+  from { --counter: 0; }
+  to { --counter: var(--target); }
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body), 'Segoe UI', sans-serif;
+  color: #1A1A2E;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* Skip to content */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 0.75rem 1.5rem;
+  background: #C9A84C;
+  color: #0A1628;
+  font-weight: 600;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-to-content:focus {
+  left: 0;
+  top: 0;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+h1, h2, .font-display {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.025em;
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-body), 'Segoe UI', sans-serif;
+}
+
+/* ============================================
+   Scrollbar Styling
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D1B2A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A84C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4B766;
+}
+
+/* ============================================
+   Custom Utilities
+   ============================================ */
+
+/* Gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C9A84C 0%, #E8D5A3 50%, #C9A84C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Navy gradient overlay */
+.overlay-navy {
+  background: linear-gradient(
+    to right,
+    rgba(10, 22, 40, 0.92) 0%,
+    rgba(13, 27, 42, 0.75) 50%,
+    rgba(27, 42, 74, 0.5) 100%
+  );
+}
+
+/* Gold gradient background */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #C9A84C 0%, #D4B766 100%);
+}
+
+/* Subtle grid texture for dark sections */
+.bg-grid-texture {
+  background-image: 
+    linear-gradient(rgba(201, 168, 76, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 168, 76, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Glass effect for header on scroll */
+.glass-header {
+  background: rgba(13, 27, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Technical data table styles */
+.tech-table {
+  font-family: var(--font-mono), 'Courier New', monospace;
+  font-size: 0.8125rem;
+}
+
+.tech-table th {
+  background: #0D1B2A;
+  color: #FFFFFF;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tech-table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #E5E5E5;
+  white-space: nowrap;
+}
+
+.tech-table tbody tr:nth-child(even) {
+  background: #FAFAFA;
+}
+
+.tech-table tbody tr:hover {
+  background: #FAF5E8;
+}
+
+/* Sticky first column for mobile table scroll */
+.tech-table td:first-child,
+.tech-table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  background: inherit;
+}
+
+.tech-table th:first-child {
+  z-index: 15;
+}
+
+/* Gold left border accent on tables */
+.table-gold-border {
+  border-left: 3px solid #C9A84C;
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  .no-print,
+  header,
+  footer,
+  .floating-elements {
+    display: none !important;
+  }
+  
+  body {
+    color: #000;
+    background: #fff;
+  }
+  
+  .tech-table th {
+    background: #333 !important;
+    color: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* ============================================
+   Focus Styles (Accessibility)
+   ============================================ */
+
+*:focus-visible {
+  outline: 2px solid #C9A84C;
+  outline-offset: 2px;
+}
+
+/* Remove default focus for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================
+   Selection
+   ============================================ */
+
+::selection {
+  background: rgba(201, 168, 76, 0.3);
+  color: #0A1628;
+}
