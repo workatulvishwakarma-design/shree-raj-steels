@@ -6,6 +6,7 @@ import { ArrowUp, Phone } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 
 import CookieConsent from "@/components/ui/CookieConsent";
+import AIChatWidget from "@/components/ui/AIChatWidget";
 
 // WhatsApp SVG Icon
 function WhatsAppIcon({ size = 24 }: { size?: number }) {
@@ -18,6 +19,7 @@ function WhatsAppIcon({ size = 24 }: { size?: number }) {
 
 export function FloatingElements() {
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setShowBackToTop(window.scrollY > 500);
@@ -30,38 +32,63 @@ export function FloatingElements() {
   };
 
   return (
-    <div className="floating-elements fixed bottom-0 right-0 z-40 no-print">
-      {/* WhatsApp Button */}
-      <a
-        href={`https://wa.me/${COMPANY.whatsapp}?text=Hi%20SRS%2C%20I%27d%20like%20to%20enquire%20about%20your%20products.`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform duration-200 z-50"
-        aria-label="Chat on WhatsApp"
-      >
-        <WhatsAppIcon size={28} />
-        {/* Pulse ring */}
-        <span className="absolute inset-0 rounded-full bg-[#25D366] animate-pulse-ring opacity-30" />
-      </a>
+    <div className="floating-elements fixed inset-x-0 bottom-0 z-40 no-print pointer-events-none">
+      {/* WhatsApp Button on Bottom-Left */}
+      <div className="fixed bottom-6 left-6 z-50 pointer-events-auto flex items-center">
+        <a
+          href={`https://wa.me/${COMPANY.whatsapp}?text=Hi%20SRS%2C%20I%27d%20like%20to%20enquire%20about%20your%20products.`}
+          target="_blank"
+          rel="noopener noreferrer"
+          onMouseEnter={() => setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+          className="relative w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform duration-200"
+          aria-label="Chat on WhatsApp"
+        >
+          <WhatsAppIcon size={28} />
+          {/* Pulsing visual indicator */}
+          <span className="absolute inset-0 rounded-full bg-[#25D366] animate-pulse-ring opacity-30 pointer-events-none" />
+        </a>
 
-      {/* Back to Top */}
-      <AnimatePresence>
-        {showBackToTop && (
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            onClick={scrollToTop}
-            className="fixed bottom-24 right-6 w-11 h-11 bg-navy-800 text-gold-500 border border-gold-500/30 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-500 hover:text-navy-900 transition-colors duration-200 z-50"
-            aria-label="Back to top"
-          >
-            <ArrowUp size={20} />
-          </motion.button>
-        )}
-      </AnimatePresence>
+        {/* Hover Label */}
+        <AnimatePresence>
+          {showTooltip && (
+            <motion.div
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -10 }}
+              className="ml-3 px-3 py-1.5 bg-slate-900 border border-slate-800 text-[11px] text-white font-semibold rounded-lg shadow-xl"
+            >
+              Chat on WhatsApp
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {/* AI Support Chatbot Widget on Bottom-Right */}
+      <div className="pointer-events-auto">
+        <AIChatWidget />
+      </div>
+
+      {/* Back to Top - Shifted Up to clear the AI Chat widget icon */}
+      <div className="pointer-events-auto">
+        <AnimatePresence>
+          {showBackToTop && (
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              onClick={scrollToTop}
+              className="fixed bottom-24 right-7 w-11 h-11 bg-navy-800 text-gold-500 border border-gold-500/30 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-500 hover:text-navy-900 transition-colors duration-200 z-50 cursor-pointer"
+              aria-label="Back to top"
+            >
+              <ArrowUp size={20} />
+            </motion.button>
+          )}
+        </AnimatePresence>
+      </div>
 
       {/* Mobile Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 lg:hidden bg-navy-900/95 backdrop-blur-md border-t border-gold-500/20 p-3 flex gap-3 z-30">
+      <div className="fixed bottom-0 left-0 right-0 lg:hidden bg-navy-900/95 backdrop-blur-md border-t border-gold-500/20 p-3 flex gap-3 z-30 pointer-events-auto">
         <a
           href={`tel:${COMPANY.phones[0].replace(/\s/g, "")}`}
           className="flex-1 flex items-center justify-center gap-2 py-3 bg-navy-700 text-white text-sm font-semibold rounded-lg"
@@ -78,7 +105,9 @@ export function FloatingElements() {
       </div>
 
       {/* Cookie Consent Popup */}
-      <CookieConsent />
+      <div className="pointer-events-auto">
+        <CookieConsent />
+      </div>
     </div>
   );
 }

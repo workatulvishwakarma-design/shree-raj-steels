@@ -169,8 +169,8 @@ export function Header() {
             : "bg-transparent py-4 sm:py-4.5"
         }`}
       >
-        {/* Main centered layout container. Added relative class to establish positioning anchor for full-width dropdowns. */}
-        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        {/* Main centered layout container. Anchored to header viewport for robust centering. */}
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo Lockup */}
           <Link
             href="/"
@@ -229,7 +229,7 @@ export function Header() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.99 }}
                       transition={{ duration: 0.15, ease: "easeOut" }}
-                      className={`absolute top-full mt-2.5 rounded-2xl bg-navy-850/98 backdrop-blur-2xl border border-white/10 shadow-2xl p-8 sm:p-10 pb-6 overflow-hidden left-0 right-0 mx-auto ${
+                      className={`absolute top-full mt-2.5 rounded-2xl bg-navy-900 border border-white/10 shadow-2xl p-8 sm:p-10 pb-6 overflow-hidden left-0 right-0 mx-auto ${
                         link.label === "Products"
                           ? "w-[calc(100vw-48px)] max-w-[1392px]"
                           : link.label === "Industries"
@@ -239,7 +239,7 @@ export function Header() {
                     >
                       {/* 1. PRODUCTS MEGA MENU (Mockup-matched 4-column layout) */}
                       {link.label === "Products" && (
-                        <div className="grid grid-cols-[20%_25%_22%_33%] gap-6 lg:gap-8">
+                        <div className="grid grid-cols-[2fr_2.5fr_2.2fr_3.3fr] gap-6 lg:gap-8">
                           {/* Column 1: Product Categories */}
                           <div className="flex flex-col gap-3">
                             <h4 className="text-[11px] font-bold text-gold-500 uppercase tracking-widest border-b border-white/5 pb-2 mb-1.5">
@@ -452,7 +452,7 @@ export function Header() {
 
                       {/* 2. INDUSTRIES MEGA MENU */}
                       {link.label === "Industries" && (
-                        <div className="grid grid-cols-[70%_30%] gap-6">
+                        <div className="grid grid-cols-[7fr_3fr] gap-6">
                           {/* Column 1: Grid of Visual Cards */}
                           <div>
                             <h4 className="text-[10px] font-bold text-gold-500 uppercase tracking-widest border-b border-white/5 pb-2 mb-3.5">
@@ -536,7 +536,7 @@ export function Header() {
 
                       {/* 3. TECHNICAL DATA MEGA MENU */}
                       {link.label === "Technical Data" && (
-                        <div className="grid grid-cols-[70%_30%] gap-6">
+                        <div className="grid grid-cols-[7fr_3fr] gap-6">
                           {/* Column 1: Grid of Technical Sections */}
                           <div>
                             <h4 className="text-[10px] font-bold text-gold-500 uppercase tracking-widest border-b border-white/5 pb-2 mb-3.5">
@@ -619,7 +619,7 @@ export function Header() {
 
                       {/* 4. ABOUT COMPANY MEGA MENU */}
                       {link.label === "About" && (
-                        <div className="grid grid-cols-[70%_30%] gap-6">
+                        <div className="grid grid-cols-[7fr_3fr] gap-6">
                           {/* Column 1: Grid of About Pages */}
                           <div>
                             <h4 className="text-[10px] font-bold text-gold-500 uppercase tracking-widest border-b border-white/5 pb-2 mb-3.5">
@@ -805,7 +805,7 @@ export function Header() {
                                   className="text-sm text-gray-400 hover:text-gold-500 transition-colors py-0.5 pl-2 flex items-center justify-between"
                                 >
                                   <span>{item.label}</span>
-                                  <span className="text-xs text-gray-655">→</span>
+                                  <span className="text-xs text-gray-500">→</span>
                                 </Link>
                               ))}
 
@@ -824,7 +824,7 @@ export function Header() {
                                     className="text-sm text-gray-400 hover:text-gold-500 transition-colors py-0.5 pl-2 flex items-center justify-between"
                                   >
                                     <span>{mat.label}</span>
-                                    <span className="text-xs text-gray-655">→</span>
+                                    <span className="text-xs text-gray-500">→</span>
                                   </Link>
                                 ))}
 
@@ -843,7 +843,7 @@ export function Header() {
                                     className="text-sm text-gray-400 hover:text-gold-500 transition-colors py-0.5 pl-2 flex items-center justify-between"
                                   >
                                     <span>{res.label}</span>
-                                    <span className="text-xs text-gray-655">→</span>
+                                    <span className="text-xs text-gray-500">→</span>
                                   </Link>
                                 ))}
                             </>
@@ -862,7 +862,7 @@ export function Header() {
                                 className="text-sm text-gray-400 hover:text-gold-500 transition-colors py-1 flex items-center justify-between"
                               >
                                 <span>{ind.label}</span>
-                                <span className="text-xs text-gray-650">→</span>
+                                <span className="text-xs text-gray-500">→</span>
                               </Link>
                             ))}
 
@@ -879,7 +879,7 @@ export function Header() {
                                 className="text-sm text-gray-400 hover:text-gold-500 transition-colors py-1 flex items-center justify-between"
                               >
                                 <span>{sec.label}</span>
-                                <span className="text-xs text-gray-650">→</span>
+                                <span className="text-xs text-gray-500">→</span>
                               </Link>
                             ))}
 
@@ -896,7 +896,7 @@ export function Header() {
                                 className="text-sm text-gray-400 hover:text-gold-500 transition-colors py-1 flex items-center justify-between"
                               >
                                 <span>{sec.label}</span>
-                                <span className="text-xs text-gray-650">→</span>
+                                <span className="text-xs text-gray-500">→</span>
                               </Link>
                             ))}
                         </div>

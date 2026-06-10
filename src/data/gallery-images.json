@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "src": "/images/factory/factory-floor-1.jpg",
+    "alt": "Factory floor with pipe fittings production",
+    "category": "Factory & Facility"
+  },
+  {
+    "id": 2,
+    "src": "/images/factory/factory-floor-2.jpg",
+    "alt": "Large pipe fittings in manufacturing facility",
+    "category": "Factory & Facility"
+  },
+  {
+    "id": 3,
+    "src": "/images/factory/factory-floor-3.jpg",
+    "alt": "Industrial pipe bending equipment",
+    "category": "Factory & Facility"
+  },
+  {
+    "id": 4,
+    "src": "/images/factory/factory-floor-4.jpg",
+    "alt": "Factory equipment and machinery",
+    "category": "Factory & Facility"
+  },
+  {
+    "id": 5,
+    "src": "/images/products/elbows.jpg",
+    "alt": "Steel elbows stacked in warehouse",
+    "category": "Products"
+  },
+  {
+    "id": 6,
+    "src": "/images/products/flanges.jpg",
+    "alt": "Precision machined steel flanges",
+    "category": "Products"
+  },
+  {
+    "id": 7,
+    "src": "/images/products/pipes.jpg",
+    "alt": "Seamless steel pipes in storage",
+    "category": "Products"
+  },
+  {
+    "id": 8,
+    "src": "/images/products/tees.jpg",
+    "alt": "Steel tee fittings",
+    "category": "Products"
+  },
+  {
+    "id": 9,
+    "src": "/images/products/reducers.jpg",
+    "alt": "Concentric and eccentric reducers",
+    "category": "Products"
+  },
+  {
+    "id": 10,
+    "src": "/images/products/special.jpg",
+    "alt": "Special alloy pipe fittings",
+    "category": "Products"
+  },
+  {
+    "id": 11,
+    "src": "/images/products/warehouse.jpg",
+    "alt": "SRS warehouse with product inventory",
+    "category": "Stock & Warehouse"
+  },
+  {
+    "id": 12,
+    "src": "/images/factory/warehouse-1.jpg",
+    "alt": "Steel products storage area",
+    "category": "Stock & Warehouse"
+  },
+  {
+    "id": 13,
+    "src": "/images/factory/products-stack.jpg",
+    "alt": "Stacked pipe fittings ready for dispatch",
+    "category": "Stock & Warehouse"
+  }
+]

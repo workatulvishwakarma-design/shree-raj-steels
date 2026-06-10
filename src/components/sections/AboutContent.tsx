@@ -99,7 +99,7 @@ export function AboutContent() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
             <motion.div variants={fadeUp}>
-              <SectionHeader label="ADVANTAGES" title="Why Choose SRS?" />
+              <SectionHeader label="ADVANTAGES" title="Why Choose SRS?" light={true} />
             </motion.div>
           </AnimatedSection>
 
@@ -129,7 +129,7 @@ export function AboutContent() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
             <motion.div variants={fadeUp}>
-              <SectionHeader label="CERTIFICATIONS" title="Our Commitment to Quality" />
+              <SectionHeader label="CERTIFICATIONS" title="Our Commitment to Quality" light={true} />
             </motion.div>
           </AnimatedSection>
 

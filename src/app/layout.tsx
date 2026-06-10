@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { FloatingElements } from "@/components/layout/FloatingElements";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -175,15 +172,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col font-[family-name:var(--font-montserrat)]">
-        <a href="#main-content" className="skip-to-content">
-          Skip to main content
-        </a>
-        <Header />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
-        <Footer />
-        <FloatingElements />
+        {children}
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 // ─────────────────────────────────────────────────────────────
 // Shree Raj Steels – Product Catalogue Data
 // ─────────────────────────────────────────────────────────────
+import { PRODUCT_CATEGORIES } from "@/config/productCategories";
 
 export interface Product {
   slug: string;
@@ -30,8 +31,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Pipes",
     description:
       "Seamless and welded pipes & tubes for high-pressure, high-temperature, and corrosive service across oil & gas, petrochemical, and power-generation industries. Shree Raj Steels stocks a comprehensive range from 1/2\" to 60\" in all major grades and schedules, backed by mill test certificates and third-party inspection.",
-    heroImage: "/images/products/pipes.jpg",
-    cardImage: "/images/products/pipes.jpg",
+    heroImage: PRODUCT_CATEGORIES.pipesTubes.heroImage,
+    cardImage: PRODUCT_CATEGORIES.pipesTubes.image,
     sizeRange: '1/2" – 60"',
     standards: [
       "API 5L",
@@ -117,8 +118,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Elbows",
     description:
       "Precision-manufactured 45°, 90°, and 180° elbows and piping bends available in long-radius, short-radius, and custom-radius configurations from 1D to 25D. Ideal for directional changes in process piping, Shree Raj Steels supplies them in carbon, alloy, stainless, and exotic grades.",
-    heroImage: "/images/products/elbows.jpg",
-    cardImage: "/images/products/elbows.jpg",
+    heroImage: PRODUCT_CATEGORIES.elbowsBends.heroImage,
+    cardImage: PRODUCT_CATEGORIES.elbowsBends.image,
     sizeRange: '1/2" – 60"',
     standards: [
       "ASME/ANSI B16.9",
@@ -216,8 +217,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Tees",
     description:
       "Seamless and welded equal and reducing tees for branch connections in process piping systems. Shree Raj Steels offers standard and non-standard tee configurations in carbon steel, alloy steel, stainless steel, and exotic alloys to suit every project requirement.",
-    heroImage: "/images/products/tees.jpg",
-    cardImage: "/images/products/tees.jpg",
+    heroImage: PRODUCT_CATEGORIES.equalUnequalTees.heroImage,
+    cardImage: PRODUCT_CATEGORIES.equalUnequalTees.image,
     sizeRange: '1/2" – 60"',
     standards: [
       "ASME/ANSI B16.9",
@@ -311,8 +312,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Reducers",
     description:
       "Concentric and eccentric reducers for smooth pipe-size transitions in process, power, and structural piping. Shree Raj Steels stocks seamless and welded reducers in all major schedules, ensuring leak-free joints and optimal flow characteristics.",
-    heroImage: "/images/products/reducers.jpg",
-    cardImage: "/images/products/reducers.jpg",
+    heroImage: PRODUCT_CATEGORIES.reducers.heroImage,
+    cardImage: PRODUCT_CATEGORIES.reducers.image,
     sizeRange: '1/2" – 60"',
     standards: [
       "ASME/ANSI B16.9",
@@ -403,8 +404,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Caps",
     description:
       "Seamless and welded pipe caps for end-closure applications in pressure vessels, piping systems, and structural tubework. Shree Raj Steels supplies caps across a full diameter range with complete material traceability and compliance to international standards.",
-    heroImage: "/images/products/caps.png",
-    cardImage: "/images/products/caps.png",
+    heroImage: PRODUCT_CATEGORIES.pipeCaps.heroImage,
+    cardImage: PRODUCT_CATEGORIES.pipeCaps.image,
     sizeRange: '1/2" – 60"',
     standards: [
       "ASME/ANSI B16.9",
@@ -496,8 +497,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Flanges",
     description:
       "Forged steel flanges in weld-neck, slip-on, blind, socket-weld, and plate configurations for Class 150 through 2500 and PN 2.5 through 400 pressure ratings. Shree Raj Steels provides flanges with American and European face-finish options, complete with EN/NACE compliance and material certificates.",
-    heroImage: "/images/products/flanges.jpg",
-    cardImage: "/images/products/flanges.jpg",
+    heroImage: PRODUCT_CATEGORIES.flanges.heroImage,
+    cardImage: PRODUCT_CATEGORIES.flanges.image,
     sizeRange: '1/2" – 60" | Class 150 – 2500 | PN 2.5 – 400',
     standards: [
       "ANSI B16.5",
@@ -590,8 +591,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Flat Products",
     description:
       "A comprehensive range of hot-rolled, cold-rolled, galvanised-plain, and colour-coated steel coils and sheets for structural, automotive, and general engineering applications. Shree Raj Steels supplies flat products conforming to IS, ASTM, and EN standards with prompt delivery from our Mumbai stockyard.",
-    heroImage: "/images/products/flat.jpg",
-    cardImage: "/images/products/flat.jpg",
+    heroImage: PRODUCT_CATEGORIES.flatProducts.heroImage,
+    cardImage: PRODUCT_CATEGORIES.flatProducts.image,
     sizeRange: "0.3 mm – 25 mm thick | Coils & Sheets",
     standards: [
       "IS 2062 (E250 / E350)",
@@ -644,8 +645,8 @@ export const PRODUCTS: Product[] = [
     shortName: "Special Alloys",
     description:
       "High-performance nickel alloy, super-austenitic, super-duplex, and corrosion-resistant fittings engineered for the most demanding environments in offshore, chemical processing, and desalination. Shree Raj Steels sources these materials from globally approved mills with full traceability.",
-    heroImage: "/images/products/special.jpg",
-    cardImage: "/images/products/special.jpg",
+    heroImage: PRODUCT_CATEGORIES.specialMaterials.heroImage,
+    cardImage: PRODUCT_CATEGORIES.specialMaterials.image,
     sizeRange: '1/2" – 24" (fittings) | Custom sizes on request',
     standards: [
       "ASTM B366 (Nickel Alloy Fittings)",

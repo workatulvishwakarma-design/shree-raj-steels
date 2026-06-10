@@ -1,0 +1,50 @@
+[
+  {
+    "id": "lead-1",
+    "name": "Rajesh Kumar",
+    "company": "L&T Hydrocarbon Engineering",
+    "email": "rajesh.kumar@lntecc.com",
+    "phone": "+91-9820012345",
+    "country": "India",
+    "products": "Pipes, Elbows",
+    "message": "Requirement of ASTM A106 Gr.B seamless pipes (6 inch, Sch 40) - 200 meters. Please send mill certificates and quote.",
+    "date": "2026-06-08T10:30:00Z",
+    "status": "new"
+  },
+  {
+    "id": "lead-2",
+    "name": "Sarah Jenkins",
+    "company": "Gulf Piping Co.",
+    "email": "sjenkins@gulfpiping.ae",
+    "phone": "+971-50-1234567",
+    "country": "UAE",
+    "products": "Flanges",
+    "message": "Looking for weld neck and slip-on flanges in ASTM A182 F316L, Class 150/300. Annual supply requirement.",
+    "date": "2026-06-05T14:15:00Z",
+    "status": "contacted"
+  },
+  {
+    "id": "lead-3",
+    "name": "Amit Shah",
+    "company": "Reliance Industries Ltd",
+    "email": "amit.shah@ril.com",
+    "phone": "+91-9004054321",
+    "country": "India",
+    "products": "Tubes, Reducers",
+    "message": "Inquiry for heat exchanger tubes (ASTM A213 TP304L) for Jamnagar refinery expansion project. Need immediate response.",
+    "date": "2026-06-02T09:00:00Z",
+    "status": "qualified"
+  },
+  {
+    "id": "lead-a64632e4-c020-40d4-9b2b-5e0431c0fdee",
+    "name": "Atul v",
+    "company": "ABC ",
+    "email": "customer@designerworld.com",
+    "phone": "09987073033",
+    "country": "India",
+    "products": "Elbows & Bends",
+    "message": "Quote request items: [Category: , Grade: ASS, Size: 22, Qty: 333]. Additional Notes: TEST ",
+    "date": "2026-06-10T10:05:26.440Z",
+    "status": "new"
+  }
+]

@@ -337,7 +337,7 @@ export default function SearchPopup({ onClose }: SearchPopupProps) {
                         className="flex items-center justify-between text-left text-xs text-gray-300 hover:text-gold-500 transition-colors py-0.5 cursor-pointer group"
                       >
                         <span>{item.label}</span>
-                        <span className="text-[10px] text-gray-650 group-hover:text-gold-500 transition-colors">→</span>
+                        <span className="text-[10px] text-gray-500 group-hover:text-gold-500 transition-colors">→</span>
                       </button>
                     ))}
                   </div>
@@ -359,7 +359,7 @@ export default function SearchPopup({ onClose }: SearchPopupProps) {
                         className="flex items-center justify-between text-left text-xs text-gray-300 hover:text-gold-500 transition-colors py-0.5 cursor-pointer group"
                       >
                         <span>{item.label}</span>
-                        <span className="text-[10px] text-gray-655 group-hover:text-gold-500 transition-colors">→</span>
+                        <span className="text-[10px] text-gray-500 group-hover:text-gold-500 transition-colors">→</span>
                       </button>
                     ))}
                   </div>
@@ -385,7 +385,7 @@ export default function SearchPopup({ onClose }: SearchPopupProps) {
                         className="flex items-center justify-between text-left text-xs text-gray-300 hover:text-gold-500 transition-colors py-0.5 cursor-pointer group"
                       >
                         <span>{item.label}</span>
-                        <span className="text-[10px] text-gray-655 group-hover:text-gold-500 transition-colors">→</span>
+                        <span className="text-[10px] text-gray-500 group-hover:text-gold-500 transition-colors">→</span>
                       </button>
                     ))}
                   </div>
